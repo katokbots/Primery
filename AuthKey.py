@@ -29,7 +29,7 @@ def create_token(auth_key: str) -> str:
     iat = iat.decode("utf-8")
     return mid + ":" + iat + "." + digest
 
-auth = " autah key"
+auth = " autah key" #isi autah key nya di sini
 for t in auth.split("\n"):
 	if t:
 		print(create_token(t))
